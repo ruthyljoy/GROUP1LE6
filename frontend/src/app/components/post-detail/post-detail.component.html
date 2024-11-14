@@ -1,0 +1,10 @@
+<div>
+  <h3><a [routerLink]="['/posts', post?.id]">{{ post?.title }}</a></h3>
+  <p class="post-meta">
+    by {{ post?.firstName }} {{ post?.lastName }} ({{ post?.userName }}); 
+    on {{ post?.dateCreated | date:'mediumDate' }}
+  </p>
+  <p class="post-body">{{ post?.body }}</p>
+  <a href="posts">Back</a>
+
+</div>

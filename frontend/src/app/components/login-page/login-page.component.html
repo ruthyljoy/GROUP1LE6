@@ -1,0 +1,32 @@
+<div>
+  <h1>Welcome Back</h1>
+<h3> Login Here</h3>
+  <form name="form" (ngSubmit)="onSubmit()" #f="ngForm" novalidate>
+    <div>
+
+      <h4>Username </h4>
+
+      <input required
+             type="text"
+             name="username"
+             [(ngModel)]="form.username"
+             #username="ngModel">
+            </div>
+            <div>
+
+             <h4>Password </h4>
+
+      <input type="password"
+             name="password"
+             [(ngModel)]="form.password"
+             required
+             #password="ngModel">
+    </div>
+    <button onclick="window.location.href='http://localhost:4200/posts';">Login</button>
+  </form>
+  <div class="register-container">
+    <label>Create an account?</label>
+    <a href="register">Register</a>
+  </div>
+
+</div>
